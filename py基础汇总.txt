@@ -1,0 +1,64 @@
+多个变量赋值:
+	a = b = c = 100
+	a, b, c = 100, 100, 500
+	
+数据类型
+	Python3 中有六个标准的数据类型：
+	Number（数字int、float、bool、complex)
+	String（字符串）
+	List（列表）
+	Tuple（元组）
+	Set（集合）
+	Dictionary（字典）
+	Python3 的六个标准数据类型中：
+
+	不可变数据（3 个）：Number（数字）、String（字符串）、Tuple（元组）；
+	可变数据（3 个）：List（列表）、Dictionary（字典）、Set（集合）。
+	
+运算符
+	除法 / 得到浮点型  // 得到整型。在混合计算中整型会转为float
+	
+成员运算符
+	in: 检查是否在序列里 if(a in list)
+	not in: 检查是否不在序列里 if(a not in list)
+	
+身份运算符
+	is:	比较两个对象的储存单元即值和是否在同一个内存变量中
+	not is: 反的 is
+	is 用于判断两个变量引用对象是否为同一个(同一块内存空间)， == 用于判断引用变量的值是否相等。
+	
+条件语句
+	python不支持 switch，所以只能使用if..elif...else: 实现多条件判断，多条件判断可以使用 or、and来判断
+	优化语句组，直接写到一行
+		if (a==b) : print("ok")
+		
+循环语句
+	while、for、嵌套语句
+	循环控制:break、contiunt、pass语句
+	for循环:	for可以遍历想要的序列、字符串
+		str = "abc"
+		strarr = ["aa", "bb", "cc"]
+		for index in str // 结果: a b c
+		
+		通过索引迭代
+		for index in range(len(strarr))
+			print(strarr[index]) // 结果:aa bb cc
+		
+	循环eles[还没完全理解]
+	for num in range(10, 20):  # 迭代 10 到 20 之间的数字
+		for i in range(2, num):  # 根据因子迭代
+			if num % i == 0:  # 确定第一个因子
+				j = num / i  # 计算第二个因子
+				print('%d 等于 %d * %d' % (num, i, j))
+				break  # 跳出当前循环
+		else:  # 循环的 else 部分
+			print(num, '是一个质数')
+			
+				break 语句:
+		跳出整个循环，如果有多层循环将会打破break语句当前循环的层级
+		
+	break 语句:
+		跳出整个循环
+	
+	continue 语句:
+		跳出当前循环，继续允许下一次循环

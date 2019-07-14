@@ -1,0 +1,43 @@
+Python 列表(List)
+	序列是Python中最基本的数据结构。序列中的每个元素都分配一个数字 - 它的位置，或索引从0开始，
+	Python有6个序列的内置类型，最常见的是列表和元组。
+	序列都可以进行的操作包括索引，切片，加，乘，检查成员。
+	例子:
+		list1 = ['physics', 'chemistry', 1997, 2000]
+		与字符串的索引一样，列表索引从0开始。列表可以进行截取、组合等。
+		
+	访问值:
+		依然可以使用 [] 来截取列表的值
+			list1[0:1]	// 'physics'
+		
+	添加元素:
+		list1.append('新加入的元素')
+		
+	删除元素:
+		del list1[0]	//删除第0个元素
+		
+	列表操作符
+		len(list1)		长度
+		list1+list2		合并
+		list1*5			重复
+		1 in list1		1是否在list1 返回bool
+		for x in list1	迭代
+		
+	列表函数
+		import operator
+			operator.eq()		比较两个列表 boole
+			
+		len()		统计元素个数
+		max()		返回列表最大值,不支持中文
+		min()		返回列表元素最小值
+		list()		将元组转为列表
+		
+	列表方法
+		list.append()		列表末尾添加元素
+		list.count()		统计元素在列表出现的次数
+		list.extend()		用更新方式来添加另一个序列的多个值
+		list.insert(i,o)	将对象插入列表中
+		list.pop()			移除列表的一个元素，默认是最后一个
+		list.remove()		移除元素的第一个匹配的值
+		list.reverse()		反向列表的元素
+		list.sort()			排序
